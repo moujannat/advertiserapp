@@ -21,3 +21,7 @@ Invoke api using endpoints found in swagger documentation http://localhost:8080/
 Actuator endpoints
 ----
 http://localhost:8090/actuator/
+
+To build a docker image
+----
+./gradlew build docker
