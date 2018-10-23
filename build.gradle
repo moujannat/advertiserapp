@@ -12,7 +12,7 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-        //classpath "gradle.plugin.com.boxfuse.client:flyway-release:4.0.3"
+        classpath "gradle.plugin.com.boxfuse.client:flyway-release:4.0.3"
     }
 }
 plugins {
@@ -26,8 +26,7 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'jacoco'
-
-//apply plugin: "org.flywaydb.flyway"
+apply plugin: "org.flywaydb.flyway"
 
 group = 'com.spring.projects'
 version = '0.0.1-SNAPSHOT'
@@ -49,7 +48,7 @@ dependencies {
     compile('io.springfox:springfox-swagger2:2.9.2')
     compile('io.springfox:springfox-swagger-ui:2.9.2')
     compile('com.google.guava:guava:16+')
-    //compile('org.flywaydb:flyway-core:4.0.3')
+    compile('org.flywaydb:flyway-core:4.0.3')
     compileOnly('org.projectlombok:lombok:1.18.2')
     apt('org.projectlombok:lombok:1.18.2')
 
@@ -59,8 +58,3 @@ jacoco {
     toolVersion = "0.8.1"
     reportsDir = file("$buildDir/jacoco")
 }
-
-//flyway {
-// url = 'jdbc:h2:mem:testdb'
-//user = 'sa'
-//}
