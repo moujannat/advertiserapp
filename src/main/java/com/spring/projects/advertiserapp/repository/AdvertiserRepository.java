@@ -22,7 +22,7 @@ public interface AdvertiserRepository {
     @Insert("INSERT INTO advertiser(name, contactName, creditLimit) VALUES (#{name}, #{contactName}, #{creditLimit})")
     public int insert(Advertiser advertiser);
 
-    @Update("Update advertiser set name=#{name},contactName=#{contactName},creditLimit=#{creditLimit}")
+    @Update("Update advertiser set name=#{name},contactName=#{contactName},creditLimit=#{creditLimit} WHERE name = #{name}")
     public int update(Advertiser advertiser);
 
 }
