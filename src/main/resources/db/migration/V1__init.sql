@@ -2,9 +2,9 @@ create table advertiser
 
 (
 	name varchar(255) not null,
-	contact_name varchar(255) not null,
-	credit_limit double,
+	contactName varchar(255) not null,
+	creditLimit double,
 	primary key(name)
 );
 
-insert into advertiser(name,contact_name,credit_limit) values('Mou','Jannatul Mou',3500.00);
+insert into advertiser(name,contactName,creditLimit) values('Mou','Jannatul Mou',3500.00);

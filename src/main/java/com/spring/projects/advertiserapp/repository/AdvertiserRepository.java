@@ -19,10 +19,10 @@ public interface AdvertiserRepository {
     @Delete("DELETE FROM advertiser WHERE name = #{name}")
     public int deleteByName(String name);
 
-    @Insert("INSERT INTO advertiser(name, contact_name, credit_limit) VALUES (#{name}, #{contactName}, #{creditLimit})")
+    @Insert("INSERT INTO advertiser(name, contactName, creditLimit) VALUES (#{name}, #{contactName}, #{creditLimit})")
     public int insert(Advertiser advertiser);
 
-    @Update("Update advertiser set name=#{name}, credit_limit=#{creditLimit} where name=#{name}")
+    @Update("Update advertiser set name=#{name},contactName=#{contactName},creditLimit=#{creditLimit}")
     public int update(Advertiser advertiser);
 
 }

@@ -1,1 +1,1 @@
-insert into advertiser(name,contact_name,credit_limit) values('Mou','Jannatul Mou',3500.00);
+insert into advertiser(name,contactName,creditLimit) values('Mou','Jannatul Mou',3500.00);

@@ -2,7 +2,7 @@ create table advertiser
 
 (
 	name varchar(255) not null,
-	contact_name varchar(255) not null,
-	credit_limit double,
+	contactName varchar(255) not null,
+	creditLimit double,
 	primary key(name)
 );
